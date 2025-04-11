@@ -1,0 +1,65 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+</head>
+<body
+style="
+width: 400px;
+">
+<div class="w-100 p-3" style="background-color: #eee;">
+
+    <!-- リンク集 -->
+    <div class="mb-3 flex">
+        <div class="btn-container"><a id="atag-btn" target="_blank" href="https://lcam.aitech.ac.jp">L-cam</a></div>
+        <div class="btn-container"><a id="atag-btn" target="_blank" href="https://cms.aitech.ac.jp">Moodle</a></div>
+        <div class="btn-container"><a id="atag-btn" target="_blank" href="https://www.outlook.com/aicot.aitech.ac.jp">Aicot</a></div>
+        <div class="btn-container"><a id="atag-btn" target="_blank" href="https://ipecprt.ipec.aitech.ac.jp/login">プリンタ印刷枚数確認</a></div>
+      </div>
+
+      <!-- 以下設定 -->
+
+<form>
+    <div class="mb-3">
+      <label class="form-label">愛工大ID</label>
+      <input type="text" class="form-control" id="student_id" aria-describedby="idHelp">
+      <div id="idHelp" class="form-text">a24000aa のような愛工大IDを入力してください。</div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">パスワード</label>
+      <input type="password" class="form-control" id="student_pass" aria-describedby="passHelp">
+      <!-- <div id="passHelp" class="form-text">パスワードを保存する場合は入力してください。</div> -->
+    </div>
+    <div class="mb-3">
+        <label class="form-label">自動ログイン</label>
+        <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox_lcam" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">L-cam</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox_moodle" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Moodle</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox_aicot" value="option2">
+            <label class="form-check-label" for="inlineCheckbox3">Aicot</label>
+          </div>
+          <div class="form-check form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox_gakunin" value="option2">
+            <label class="form-check-label" for="inlineCheckbox4">学認</label>
+        </div>
+        <div id="enableHelp" class="form-text">自動ログインを無効化できます。</div>
+    </div>
+    <p class="text-start" id="text_totp">  </p>
+    <button id="save_button" type="submit" class="btn btn-primary">保存</button>
+    <p style="font-size: 12px;">この拡張機能は、ユーザID、パスワードを平文でChromeに保存しています。漏えい等の責任は負いません。自己責任でご利用ください。</p>
+</form>
+</div>
+<script src="options.js"></script>
+</body>
+</html>
