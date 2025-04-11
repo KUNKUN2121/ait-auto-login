@@ -1,6 +1,5 @@
 {
     "name": "愛工大AutoLogin",
-    "subheadings": "愛工大のサイトを自動ログインします",
     "version": "1.0.0",
     "manifest_version": 3,
     "description": "愛工大IDとパスワードを保存し、愛工大のサイトに自動ログインします。",
